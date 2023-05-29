@@ -239,8 +239,8 @@
 	  "nextSetDNM": true,
 	  "codeCheckDocument": "9",
 	  "messageCheckDocument": "Para el documento ingresado no se tiene registrada una entrada previa al pais",
-	  "codeSetDNM": "14",
-	  "messageSetDNM": "La transaccion no puede seguir siendo procesada."
+	  "codeSetDNM": "9",
+	  "messageSetDNM": "Para el documento ingresado no se tiene registrada una entrada previa al pais"
 	},
 	{
 	  "_services": "CheckDocument/IgnoreHit/SetDNM",
@@ -369,8 +369,8 @@
 	  "nextSetDNM": true,
 	  "codeCheckDocument": "10",
 	  "messageCheckDocument": "Para el documento ingresado la ultima entrada al pais registrada es mayor a 90 dias",
-	  "codeSetDNM": "14",
-	  "messageSetDNM": "La transaccion no puede seguir siendo procesada."
+	  "codeSetDNM": "10",
+	  "messageSetDNM": "Para el documento ingresado la ultima entrada al pais registrada es mayor a 90 dias"
 	},
 	{
 	  "_services": "CheckDocument/IgnoreHit/SetDNM",
