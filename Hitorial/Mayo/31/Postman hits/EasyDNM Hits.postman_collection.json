@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "2d4b8f1c-f5ba-4ea7-aba5-2d4f2a4e1a33",
+		"name": "EasyDNM Hits",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26253348",
+		"_collection_link": "https://winter-firefly-286908-1.postman.co/workspace/Team-Workspace~6a009517-21c2-4252-8059-348cd153b679/collection/26253348-2d4b8f1c-f5ba-4ea7-aba5-2d4f2a4e1a33?action=share&creator=26253348&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "GetBlacklistHits",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"/**I store the answer in JsonDta*/\r",
+							"const jsonData = pm.response.json();\r",
+							"\r",
+							"console.log(\"GetBlacklistHits\", jsonData)\r",
+							"\r",
+							"/**valid if the status code is 200*/\r",
+							"pm.test(\"Status code is 200\", () => {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"/**validate that the response code is the one I am waiting for in the js for the current iteration*/\r",
+							"pm.test(\"Checking response code\", () => {\r",
+							"    pm.expect(jsonData.code.toString()).to.eq(data.codeGetBlacklistHits.toString());\r",
+							"});\r",
+							"\r",
+							"/**validate that the response message is the one I am expecting in the js for the current iteration*/\r",
+							"pm.test(\"Checking response message\", () => {\r",
+							"    pm.expect(jsonData.message.toString()).to.eq(data.messageGetBlacklistHits.toString());\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{easydnm.token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"surname\": \"{{lastName}}\",\r\n  \"name\": \"{{name}}\",\r\n  \"dateOfBirth\": \"{{dateOfBirth}}\",\r\n  \"placeOfBirth\": \"{{placeOfBirth}}\",\r\n  \"nationality\": \"{{nationality}}\",\r\n  \"sex\": \"{{gender}}\",\r\n  \"countryName\": \"{{countryName}}\",\r\n  \"countryISO\": \"{{countryISO}}\",\r\n  \"documentTypeName\": \"{{documentTypeName}}\",\r\n  \"documentTypeISO\": \"{{documentTypeISO}}\",\r\n  \"documentID\": \"{{documentID}}\",\r\n  \"personalID\": \"null\",\r\n  \"expirationDate\": \"{{expirationDate}}\",\r\n  \"issueDate\": \"{{issueDate}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{easydnm.url}}/api/DNM/GetBlacklistHits?clientTrxId={{clientTrxId}}&runwayId={{runwayIdABC}}",
+					"host": [
+						"{{easydnm.url}}"
+					],
+					"path": [
+						"api",
+						"DNM",
+						"GetBlacklistHits"
+					],
+					"query": [
+						{
+							"key": "clientTrxId",
+							"value": "{{clientTrxId}}"
+						},
+						{
+							"key": "runwayId",
+							"value": "{{runwayIdABC}}"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetBlacklistHits",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"surname\": \"FARIAS DOS SANTOS\",\r\n  \"name\": \"RODRIGO\",\r\n  \"dateOfBirth\": \"2004-03-16\",\r\n  \"placeOfBirth\": \"BRASILIA\",\r\n  \"nationality\": \"BRA\",\r\n  \"sex\": \"M\",\r\n  \"countryName\": \"BRASIL\",\r\n  \"countryISO\": \"BRA\",\r\n  \"documentTypeName\": \"PASAPORTE\",\r\n  \"documentTypeISO\": \"p\",\r\n  \"documentID\": \"AA000381\",\r\n  \"personalID\": \"\",\r\n  \"expirationDate\": \"2025-07-05\",\r\n  \"issueDate\": \"2015-07-06\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{easydnm.url}}/api/DNM/GetBlacklistHits?clientTrxId=1&runwayId=WSGATE03",
+							"host": [
+								"{{easydnm.url}}"
+							],
+							"path": [
+								"api",
+								"DNM",
+								"GetBlacklistHits"
+							],
+							"query": [
+								{
+									"key": "clientTrxId",
+									"value": "1"
+								},
+								{
+									"key": "runwayId",
+									"value": "WSGATE03"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/8.5"
+						},
+						{
+							"key": "GUID",
+							"value": "65d227e8-e255-4bdd-857a-7656da5327e0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ARR/3.0"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 16 May 2023 18:20:30 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1161"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"idTrxEasyDNM\": 928,\n    \"blacklistHits\": [\n        {\n            \"source\": \"SGSP Consulta impedidos\",\n            \"name\": \"RODRIGO  \",\n            \"surname\": \"FARIAS DOS SANTOS\",\n            \"dateOfBitrh\": \"3/16/2004 12:00:00 AM\",\n            \"documentType\": \"P\",\n            \"documentID\": \"\",\n            \"personalID\": \"\",\n            \"documentCountry\": \"BRA\",\n            \"action\": \"\",\n            \"observations\": null,\n            \"photos\": [],\n            \"registrationDate\": \"2023-05-16T15:20:51.1073245-03:00\",\n            \"referenceId\": \"\",\n            \"nationality\": \"BRA\",\n            \"score\": \"100\",\n            \"date\": \"2022-07-01T00:00:00\",\n            \"sex\": \"M\",\n            \"typification\": \"REQUISITORIA\",\n            \"situation\": \"REQUERIDO\",\n            \"classification\": \"HechoPolicial\",\n            \"requisitionType\": \"Requerido\",\n            \"owner\": \"\"\n        },\n        {\n            \"source\": \"SGSP Consulta impedidos\",\n            \"name\": \"RODRIGO  \",\n            \"surname\": \"FARIAS DOS SANTOS\",\n            \"dateOfBitrh\": \"3/16/2004 12:00:00 AM\",\n            \"documentType\": \"P\",\n            \"documentID\": \"\",\n            \"personalID\": \"\",\n            \"documentCountry\": \"BRA\",\n            \"action\": \"\",\n            \"observations\": null,\n            \"photos\": [],\n            \"registrationDate\": \"2023-05-16T15:20:51.1073245-03:00\",\n            \"referenceId\": \"\",\n            \"nationality\": \"BRA\",\n            \"score\": \"100\",\n            \"date\": \"2022-07-01T00:00:00\",\n            \"sex\": \"M\",\n            \"typification\": \"REQUISITORIA\",\n            \"situation\": \"REQUERIDO\",\n            \"classification\": \"HechoPolicial\",\n            \"requisitionType\": \"Requerido\",\n            \"owner\": \"\"\n        }\n    ],\n    \"code\": 0,\n    \"message\": \"Get Blacklist ejecutado\",\n    \"guid\": \"65d227e8-e255-4bdd-857a-7656da5327e0\"\n}"
+				}
+			]
+		}
+	]
+}
