@@ -1,0 +1,542 @@
+{
+	"id": "9a7a02a3-6a8f-4094-92c3-5e4b507b1394",
+	"name": "EasyDnm",
+	"timestamp": "2023-06-05T14:53:10.279Z",
+	"collection_id": "26253348-92bbfb30-bfae-4fa1-9a03-053ff72ff628",
+	"folder_id": 0,
+	"environment_id": "26253348-c590c6f5-310f-4c9f-a864-a5995e9d17e1",
+	"totalPass": 94,
+	"delay": 0,
+	"persist": false,
+	"status": "finished",
+	"startedAt": "2023-06-05T14:52:37.763Z",
+	"totalFail": 23,
+	"results": [
+		{
+			"id": "4390c72a-a1d7-4c54-ae54-5992291e2aa5",
+			"name": "GetAboutInfo",
+			"url": "https://easydnm.dev.aic.carrasco.aero/api/About/GetAboutInfo",
+			"time": 70,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				166,
+				63,
+				56,
+				95,
+				94,
+				84,
+				100,
+				86,
+				77,
+				92,
+				90,
+				77,
+				70
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "32adcbb1-ad62-4269-b2f8-30a6c07d18be",
+			"name": "GetFlightsPocEnabled",
+			"url": "https://easycore.dev.aic.carrasco.aero/api/Flight/GetFlightsPocEnabled?userName=QA&terminalId=1",
+			"time": 635,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				1251,
+				442,
+				567,
+				574,
+				555,
+				620,
+				610,
+				587,
+				567,
+				612,
+				615,
+				541,
+				635
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "27e3f3a0-8535-44c4-958d-8903e0f1c9a8",
+			"name": "CreatePassengerBcbp",
+			"url": "https://easypoc.dev.aic.carrasco.aero/api/Bcbp/CreatePassengerBcbp?userName=QA&name=TEST NOMBRE NOMBRE&lastName=TEST APELLIDO&progTime=05/06/2023 13:10:00&destination=GRU&flightCode= G37631 &seatCode=012W&origin=MVD&passengerType=Pasajero_Mayor&stdaJulOptionalParam=156",
+			"time": 87,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				136,
+				68,
+				96,
+				71,
+				80,
+				75,
+				71,
+				77,
+				69,
+				83,
+				73,
+				81,
+				87
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "20a54504-3e64-46f2-a768-5426a7a08330",
+			"name": "CheckDocument",
+			"url": "https://easydnm.dev.aic.carrasco.aero/api/DNM/CheckDocument?clientTrxId=1&runwayId=WSGATE03",
+			"time": 616,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Checking response code": true,
+				"Checking response message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 13,
+					"fail": 0
+				},
+				"Checking response code": {
+					"pass": 13,
+					"fail": 0
+				},
+				"Checking response message": {
+					"pass": 13,
+					"fail": 0
+				}
+			},
+			"times": [
+				535,
+				152,
+				402,
+				349,
+				692,
+				1084,
+				196,
+				632,
+				560,
+				666,
+				196,
+				546,
+				616
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": true
+				},
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": true
+				},
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": true
+				},
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": true
+				},
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": true
+				},
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": true
+				},
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": true
+				},
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": true
+				},
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": true
+				},
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": true
+				},
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": true
+				},
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": true
+				},
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": true
+				}
+			]
+		},
+		{
+			"id": "10ebc71e-8dbc-401c-bf21-b661c85e99c6",
+			"name": "GetBlacklistHits",
+			"url": "https://easydnm.dev.aic.carrasco.aero/api/DNM/GetBlacklistHits?clientTrxId=1&runwayId=WSGATE03",
+			"time": 311,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Checking response code": true,
+				"Checking response message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Checking response code": {
+					"pass": 4,
+					"fail": 1
+				},
+				"Checking response message": {
+					"pass": 4,
+					"fail": 1
+				}
+			},
+			"times": [
+				155,
+				161,
+				331,
+				383,
+				311
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": true
+				},
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": true
+				},
+				{
+					"Status code is 200": true,
+					"Checking response code": false,
+					"Checking response message": false
+				},
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": true
+				},
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": true
+				}
+			]
+		},
+		{
+			"id": "cadce146-067f-44c6-b37f-6150d1dd9f1a",
+			"name": "IgnoreHit",
+			"url": "https://easydnm.dev.aic.carrasco.aero/api/DNM/IgnoreHit?easyDNMTrxId=567739&clientTrxId=1&runwayId=WSGATE03&dnmUserName=QA",
+			"time": 201,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Checking response code": true,
+				"Checking response message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 8,
+					"fail": 0
+				},
+				"Checking response code": {
+					"pass": 5,
+					"fail": 3
+				},
+				"Checking response message": {
+					"pass": 5,
+					"fail": 3
+				}
+			},
+			"times": [
+				190,
+				138,
+				262,
+				187,
+				282,
+				181,
+				180,
+				201
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": true
+				},
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": true
+				},
+				{
+					"Status code is 200": true,
+					"Checking response code": false,
+					"Checking response message": false
+				},
+				{
+					"Status code is 200": true,
+					"Checking response code": false,
+					"Checking response message": false
+				},
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": true
+				},
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": true
+				},
+				{
+					"Status code is 200": true,
+					"Checking response code": false,
+					"Checking response message": false
+				},
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": true
+				}
+			]
+		},
+		{
+			"id": "a641c416-d1d8-48ce-bfc2-bd1aad0bf1da",
+			"name": "SetDNM",
+			"url": "https://easydnm.dev.aic.carrasco.aero/api/DNM/SetDNM?easyDNMTrxId=567739&clientTrxId=1&runwayId=WSGATE03&dnmUserName=QA",
+			"time": 456,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Checking response code": false,
+				"Checking response message": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 13,
+					"fail": 0
+				},
+				"Checking response code": {
+					"pass": 5,
+					"fail": 8
+				},
+				"Checking response message": {
+					"pass": 6,
+					"fail": 7
+				}
+			},
+			"times": [
+				363,
+				198,
+				395,
+				366,
+				379,
+				245,
+				447,
+				378,
+				256,
+				329,
+				263,
+				352,
+				456
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": true
+				},
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": true
+				},
+				{
+					"Status code is 200": true,
+					"Checking response code": false,
+					"Checking response message": false
+				},
+				{
+					"Status code is 200": true,
+					"Checking response code": false,
+					"Checking response message": false
+				},
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": true
+				},
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": true
+				},
+				{
+					"Status code is 200": true,
+					"Checking response code": false,
+					"Checking response message": false
+				},
+				{
+					"Status code is 200": true,
+					"Checking response code": false,
+					"Checking response message": false
+				},
+				{
+					"Status code is 200": true,
+					"Checking response code": true,
+					"Checking response message": true
+				},
+				{
+					"Status code is 200": true,
+					"Checking response code": false,
+					"Checking response message": true
+				},
+				{
+					"Status code is 200": true,
+					"Checking response code": false,
+					"Checking response message": false
+				},
+				{
+					"Status code is 200": true,
+					"Checking response code": false,
+					"Checking response message": false
+				},
+				{
+					"Status code is 200": true,
+					"Checking response code": false,
+					"Checking response message": false
+				}
+			]
+		}
+	],
+	"count": 13,
+	"totalTime": 24408,
+	"collection": {
+		"requests": [
+			{
+				"id": "4390c72a-a1d7-4c54-ae54-5992291e2aa5",
+				"method": "GET"
+			},
+			{
+				"id": "32adcbb1-ad62-4269-b2f8-30a6c07d18be",
+				"method": "GET"
+			},
+			{
+				"id": "27e3f3a0-8535-44c4-958d-8903e0f1c9a8",
+				"method": "GET"
+			},
+			{
+				"id": "20a54504-3e64-46f2-a768-5426a7a08330",
+				"method": "POST"
+			},
+			{
+				"id": "10ebc71e-8dbc-401c-bf21-b661c85e99c6",
+				"method": "POST"
+			},
+			{
+				"id": "cadce146-067f-44c6-b37f-6150d1dd9f1a",
+				"method": "POST"
+			},
+			{
+				"id": "a641c416-d1d8-48ce-bfc2-bd1aad0bf1da",
+				"method": "POST"
+			}
+		]
+	}
+}
